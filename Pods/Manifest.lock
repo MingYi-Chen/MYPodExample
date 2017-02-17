@@ -1,0 +1,21 @@
+PODS:
+  - MYLib (0.0.1)
+
+DEPENDENCIES:
+  - MYLib (from `https://github.com/MingYi-Chen/MYLib.git`)
+
+EXTERNAL SOURCES:
+  MYLib:
+    :git: https://github.com/MingYi-Chen/MYLib.git
+
+CHECKOUT OPTIONS:
+  MYLib:
+    :commit: 9cca84c9be19eb59093dd0349bdb008c76f1dbd9
+    :git: https://github.com/MingYi-Chen/MYLib.git
+
+SPEC CHECKSUMS:
+  MYLib: 9ed8ea8b30d31601807611a3585436202a423698
+
+PODFILE CHECKSUM: 4e791a74d9720aee7d13a3cb7fe69199d560a596
+
+COCOAPODS: 1.1.1

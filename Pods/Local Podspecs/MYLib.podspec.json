@@ -1,0 +1,23 @@
+{
+  "name": "MYLib",
+  "version": "0.0.1",
+  "summary": "MYLib is my first test pod library.",
+  "description": "MYLib is mingyichen's' first test pod library.",
+  "homepage": "https://github.com/MingYi-Chen/MYLib",
+  "license": "Copyright (c) 2017年 ming. All rights reserved.",
+  "authors": {
+    "Ming Yi Chen": "mingyichen1@gmail.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/MingYi-Chen/MYLib.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "Classes",
+    "MYLib/*.{h,m}"
+  ],
+  "requires_arc": true
+}

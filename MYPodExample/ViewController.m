@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "MYLib/MYLib.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    MYLib* mylib = [[MYLib alloc] init];
+    NSLog(@"%ld", [mylib add]);
+    
 }
 
 
