@@ -4,7 +4,10 @@
   "summary": "MYLib is my first test pod library.",
   "description": "MYLib is mingyichen's' first test pod library.",
   "homepage": "https://github.com/MingYi-Chen/MYLib",
-  "license": "Copyright (c) 2017年 ming. All rights reserved.",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
   "authors": {
     "Ming Yi Chen": "mingyichen1@gmail.com"
   },
@@ -17,7 +20,7 @@
   },
   "source_files": [
     "Classes",
-    "MYLib/*.{h,m}"
+    "MYLib/**/*.{h,m}"
   ],
   "requires_arc": true
 }
