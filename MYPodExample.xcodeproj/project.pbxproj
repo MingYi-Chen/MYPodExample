@@ -15,6 +15,8 @@
 		B67F64D01E568DA000C4C615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B67F64CE1E568DA000C4C615 /* LaunchScreen.storyboard */; };
 		B67F64DB1E568DA000C4C615 /* MYPodExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B67F64DA1E568DA000C4C615 /* MYPodExampleTests.m */; };
 		B67F64E61E568DA000C4C615 /* MYPodExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B67F64E51E568DA000C4C615 /* MYPodExampleUITests.m */; };
+		B6D784F81E5A8B30006D8C69 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D784F71E5A8B30006D8C69 /* Department.m */; };
+		B6D784FA1E5AA0AD006D8C69 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D784F91E5AA0AD006D8C69 /* AddressBook.framework */; };
 		D366D70A0D47D9553FFD4931 /* libPods-MYPodExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F966166DEF1138567F8774 /* libPods-MYPodExample.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,9 @@
 		B67F64E11E568DA000C4C615 /* MYPodExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYPodExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B67F64E51E568DA000C4C615 /* MYPodExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYPodExampleUITests.m; sourceTree = "<group>"; };
 		B67F64E71E568DA000C4C615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D784F61E5A8B30006D8C69 /* Department.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Department.h; path = Models/Department.h; sourceTree = "<group>"; };
+		B6D784F71E5A8B30006D8C69 /* Department.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Department.m; path = Models/Department.m; sourceTree = "<group>"; };
+		B6D784F91E5AA0AD006D8C69 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6D784FA1E5AA0AD006D8C69 /* AddressBook.framework in Frameworks */,
 				D366D70A0D47D9553FFD4931 /* libPods-MYPodExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +101,7 @@
 		8B0C2B7CEA3B200433D0100E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B6D784F91E5AA0AD006D8C69 /* AddressBook.framework */,
 				97F966166DEF1138567F8774 /* libPods-MYPodExample.a */,
 			);
 			name = Frameworks;
@@ -125,6 +132,7 @@
 		B67F64BF1E568D9F00C4C615 /* MYPodExample */ = {
 			isa = PBXGroup;
 			children = (
+				B6D784F51E5A8AAB006D8C69 /* Models */,
 				B67F64C31E568DA000C4C615 /* AppDelegate.h */,
 				B67F64C41E568DA000C4C615 /* AppDelegate.m */,
 				B67F64C61E568DA000C4C615 /* ViewController.h */,
@@ -162,6 +170,15 @@
 				B67F64E71E568DA000C4C615 /* Info.plist */,
 			);
 			path = MYPodExampleUITests;
+			sourceTree = "<group>";
+		};
+		B6D784F51E5A8AAB006D8C69 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B6D784F61E5A8B30006D8C69 /* Department.h */,
+				B6D784F71E5A8B30006D8C69 /* Department.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +371,7 @@
 				B67F64C81E568DA000C4C615 /* ViewController.m in Sources */,
 				B67F64C51E568DA000C4C615 /* AppDelegate.m in Sources */,
 				B67F64C21E568DA000C4C615 /* main.m in Sources */,
+				B6D784F81E5A8B30006D8C69 /* Department.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +609,7 @@
 				B67F64EC1E568DA000C4C615 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B67F64ED1E568DA000C4C615 /* Build configuration list for PBXNativeTarget "MYPodExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -599,6 +618,7 @@
 				B67F64EF1E568DA000C4C615 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B67F64F01E568DA000C4C615 /* Build configuration list for PBXNativeTarget "MYPodExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -607,6 +627,7 @@
 				B67F64F21E568DA000C4C615 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

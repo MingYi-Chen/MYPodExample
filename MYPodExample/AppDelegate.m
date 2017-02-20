@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 
+#import <FBAllocationTracker/FBAllocationTrackerManager.h>
+
+#import <PLeakSniffer/PLeakSniffer.h>
+
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +22,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+
+    [[PLeakSniffer sharedInstance] installLeakSniffer];
+    
     return YES;
 }
 
